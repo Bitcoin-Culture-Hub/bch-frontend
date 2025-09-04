@@ -12,8 +12,6 @@ import Login from "../src/components/ui/login";
 import Register from "../src//components/ui/Register";
 import Profile from "../src/components/ui/profile"; 
 
-
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -30,8 +28,7 @@ const App = () => (
           <Route path="/register" element={<Register />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="*" element={<NotFound />} />
-          
+          <Route path="*" element={<NotFound />} />          
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

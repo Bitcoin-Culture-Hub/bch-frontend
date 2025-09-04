@@ -10,8 +10,13 @@ const Header: React.FC<HeaderProps> = ({ variant = "default" }) => {
 
   return (
     <header
-  className={`w-full ${isBlack ? "bg-black text-white" : "bg-white text-black"} border-b border-gray-500`}
+  className={`w-full ${
+    isBlack
+      ? "bg-black text-white border-b border-gray-700"  
+      : "bg-white text-black"                          
+  }`}
 >
+
 
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
