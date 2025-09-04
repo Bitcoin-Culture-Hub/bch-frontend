@@ -29,3 +29,4 @@ export function FeatureCard({ title, description, icon, className }: FeatureCard
     </Card>
   );
 }
+
