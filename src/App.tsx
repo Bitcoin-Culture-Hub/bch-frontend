@@ -9,7 +9,7 @@ import Manifesto from "./pages/Manifesto";
 import NotFound from "./pages/NotFound";
 import BitcoinCultureHub from "./Badge";
 import Quiz from "./pages/Quiz";
-import HomePage from "./pages/HomePage";
+import HomePage from "./HomePage";
 
 const queryClient = new QueryClient();
 
