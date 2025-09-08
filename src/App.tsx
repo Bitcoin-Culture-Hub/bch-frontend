@@ -8,6 +8,8 @@ import About from "./pages/About";
 import Manifesto from "./pages/Manifesto";
 import NotFound from "./pages/NotFound";
 import BitcoinCultureHub from "./Badge";
+import Quiz from "./pages/Quiz";
+import HomePage from "./pages/HomePage";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +23,8 @@ const App = () => (
           <Route path="/" element={<About />} />
           <Route path="/manifesto" element={<Manifesto />} />
           <Route path="/intro" element={<BitcoinCultureHub/>}/>
+          <Route path="/quiz" element={<Quiz/>}/>
+          <Route path="/home" element={<HomePage/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
