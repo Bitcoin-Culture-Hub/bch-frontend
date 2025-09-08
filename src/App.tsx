@@ -13,6 +13,7 @@ import HomePage from "./HomePage";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 
+
 const queryClient = new QueryClient();
 
 const App = () => (
