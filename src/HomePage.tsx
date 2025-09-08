@@ -20,9 +20,9 @@ import Header from "./components/Header"
 export default function HomePage() {
     const [showPulse, setShowPulse] = useState(false)
     const navigate = useNavigate()
-    const handleQuizNavigation = () => {
+    const handleLoginNavigation = () => {
         try {
-            navigate("/quiz")
+            navigate("/register")
         } catch (error) {
             console.warn("Quiz route not found - /quiz route needs to be created")
             setDialogOpen(false)
@@ -61,12 +61,11 @@ export default function HomePage() {
                       rounded-full w-full sm:w-auto min-w-[280px]
                       hover:scale-105 hover:shadow-2xl hover:shadow-white/25
                       transition-all duration-300 ease-out
-                      border-2 border-white
-                      ${showPulse ? "animate-pulse" : ""}
+                      border-2 border-white}
                     `}
-                                        onClick={handleQuizNavigation}
+                                        onClick={handleLoginNavigation}
                                     >
-                                        👉 Take the 3-Minute Quiz
+                                        Sign Up
                                     </Button>
 
                                 <div className="text-center sm:text-left">
@@ -169,9 +168,9 @@ export default function HomePage() {
                             {/* CTA Button */}
                             <div className="pt-4">
                                     <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 h-14 text-lg font-bold rounded-full"
-                                    onClick={handleQuizNavigation}
+                                    onClick={handleLoginNavigation}
                                     >
-                                        👉 Take the Quiz
+                                        Sign Up
                                     </Button>
                             </div>
                         </div>

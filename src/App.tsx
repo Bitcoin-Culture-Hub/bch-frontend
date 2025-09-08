@@ -10,6 +10,8 @@ import NotFound from "./pages/NotFound";
 import BitcoinCultureHub from "./Badge";
 import Quiz from "./pages/Quiz";
 import HomePage from "./HomePage";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +27,8 @@ const App = () => (
           <Route path="/intro" element={<BitcoinCultureHub/>}/>
           <Route path="/quiz" element={<Quiz/>}/>
           <Route path="/home" element={<HomePage/>}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/login" element={<Login/>}></Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
