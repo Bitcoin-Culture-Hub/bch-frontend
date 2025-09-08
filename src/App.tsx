@@ -8,9 +8,11 @@ import About from "./pages/About";
 import Manifesto from "./pages/Manifesto";
 import NotFound from "./pages/NotFound";
 import BitcoinCultureHub from "./Badge";
-import Login from "../src/components/ui/login";
-import Register from "../src//components/ui/Register";
-import Profile from "../src/components/ui/profile"; 
+import Quiz from "./pages/Quiz";
+import HomePage from "./HomePage";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+
 
 const queryClient = new QueryClient();
 
@@ -24,11 +26,11 @@ const App = () => (
           <Route path="/" element={<About />} />
           <Route path="/manifesto" element={<Manifesto />} />
           <Route path="/intro" element={<BitcoinCultureHub/>}/>
-          <Route path="/login" element={<Login />} /> 
-          <Route path="/register" element={<Register />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="*" element={<NotFound />} />          
+          <Route path="/quiz" element={<Quiz/>}/>
+          <Route path="/home" element={<HomePage/>}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/login" element={<Login/>}></Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
