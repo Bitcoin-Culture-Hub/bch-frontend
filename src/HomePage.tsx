@@ -95,7 +95,7 @@ export default function HomePage() {
                                             {/* Image container */}
                                             <div className="w-1/2">
                                                 <img
-                                                    src="public/images/Grey-Profile-Card.png"
+                                                    src="images/Grey-Profile-Card.png"
                                                     alt="Grey-Profile-Card"
                                                     className="w-full h-auto"
                                                 />
